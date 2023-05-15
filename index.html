@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" href="img/pokeball.png">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+</head>
+
+<body onload="loadPokedex()">
+    <header>
+        <h1>Pokedex</h1>
+        <input type="text" id="search" placeholder="search for Pokemon" onkeyup="filterPokemon()">
+        
+    </header>
+
+    <div id="pokedex-overview" class="pokedex-overview"></div>
+
+
+   <div id="poke-card-container" class="poke-card-container d-none"></div>
+   <div class="button-container-bottom"><button onclick="loadMore()">weitere Pokemon laden</button></div>
+   <footer><a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons">Pokemon icons created by Those Icons - Flaticon</a></footer>
+
+
+
+
+
+</body>
+
+</html>
